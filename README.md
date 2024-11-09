@@ -1,7 +1,7 @@
 # 📁 Pagina Principal
 
-**LInks e arquivos no centro**
+**Em Breve...**
 
 # 🛠️ Para Visualizar 
 
-** Para Visualizar**
+**Em Breve...**
