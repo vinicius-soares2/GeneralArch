@@ -1,6 +1,6 @@
 # 📁 Pagina Principal
 
-** LInks e arquivos no centro**
+**LInks e arquivos no centro**
 
 # 🛠️ Para Visualizar 
 
