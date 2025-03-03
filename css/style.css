@@ -1,204 +1,154 @@
-/* Reset e Estilos Básicos */
+/* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo geral */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-h1, h2, h3 {
-  font-family: 'Arial', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Header */
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-}
-
+/* Navbar */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
 }
 
 .logo a {
-  font-size: 24px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .nav-links {
-  list-style-type: none;
-  display: flex;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links li {
-  margin: 0 20px;
+    display: inline;
 }
 
 .nav-links a {
-  color: #fff;
-  font-size: 18px;
-  transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #ff7f50;
+    color: #ffcc00;
 }
 
-/* Hero Section */
+/* Hero section */
 .hero {
-  background-color: #4CAF50;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
+    background: url("../img/hero-bg.jpg") no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
 }
 
-.hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 40px;
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-btn {
-  background-color: #ff7f50;
-  padding: 15px 30px;
-  color: #fff;
-  font-size: 1.1em;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    background: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 .cta-btn:hover {
-  background-color: #ff5733;
+    background: #e6b800;
 }
 
-/* About Section */
-.about {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.1em;
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* Projects Section */
+/* Seção Projetos */
 .projects {
-  background-color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.projects h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
+    padding: 50px 20px;
 }
 
 .project-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project {
-  width: 30%;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .project img {
-  width: 100%;
-  height: auto;
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 .project-info {
-  padding: 20px;
-  background-color: #f8f8f8;
+    margin-top: 10px;
 }
 
-.project-info h3 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+.project:hover {
+    transform: scale(1.05);
 }
 
-.project-info p {
-  font-size: 1.1em;
-  color: #666;
-}
-
-/* Video Section */
+/* Seção Vídeo */
 .video {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
+    padding: 50px 20px;
 }
 
-.video h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+.video iframe {
+    max-width: 100%;
 }
 
-.video form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.video input, .video textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-}
-
-.video button {
-  background-color: #ff7f50;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  color: #fff;
-  cursor: pointer;
-}
-
-.video button:hover {
-  background-color: #ff5733;
-}
-
-/* Footer */
+/* Rodapé */
 footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 60px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 🌟 Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 50px 10px;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
 }
